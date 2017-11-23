@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	
+</head>
+<body onload="checkCookies()">
+	<h1 onclick = 'changeText(this)'>click on the text</h1>
+	<button id = 'mybtn'>Date</button>
+	<p id='demo'></p>
+	<p id ='demo1'></p>
+	<div onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" style="background-color: red; width: 120px;height:20px;padding:40px;color:white">Mouse over me</div>
+	<h3>the window.location object</h3>
+	<input type="button" value = "load the new document" onclick="newDoc()">
+
+	<script type="text/javascript">
+	function changeText(id) {
+		id.innerHTML = 'Ooops!';
+	}
+	function displayDate(){
+
+	document.getElementById('demo').innerHTML = Date();
+	}
+	document.getElementById('mybtn').onclick= displayDate();
+	function checkCookies() {
+		var text = " ";
+		if(navigator.cookieEnabled == true){
+			text = "cookies are enabled";
+		} else {
+			text = 'cookies are disabled';
+		}
+	
+	document.getElementById("demo1").innerHTML = text;
+	}
+		function onMouseOver(obj) {
+			obj.innerHTML = "Thank you!";
+		}
+		function onMouseOut(obj) {
+			obj.innerHTML = "Mouse over me";
+		}
+
+	function newDoc() {
+		window.location.assign('https://developer.facebook.com');
+	}		
+		</script>
+</body>
+</htm>

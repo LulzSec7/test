@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Multimedia embedding</title>
+</head>
+<body>
+	<!-- embedding image to html-->
+	<h2>Embeded image</h2>
+	<figure>
+		<img src="mozilla-logo.png" alt="dinosaurs logo"
+		width="220" height="157" title="mozilla logo">
+		<figcaption>Mozilla logo</figcaption>
+	</figure>	
+	<!-- embedding video in html -->
+	<h2>Embedded video</h2>
+	<video  controls width="500" height="400"    muted poster="mozilla-logo.png" preload="auto">
+		<source src="../Downloads/kaspersky.mp4" type="video/mp4">
+			<track kind="subtitles	" src="../Downloads/audio.vtt" srclang="en">
+		<p>if your finding difficulty in playing the video .Here is the <a href="../Downloads/kaspersky.mp4">video link</a> you can try</p>
+	</video>
+	<!-- embedding an audio file to html -->
+	<h2>Embedded Audio</h2>
+	<audio controls >
+		<source src="../Downloads/wesley.mp3 " type="audio/mp3">
+			<p>If your browser is unable to play the audio .Here is the <a href="../Downloads/wesley.mp3">audio link</a> you can try</p>
+	</audio>
+	<!-- iframe embedding -->
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/n8mbzU0X2nQ?controls=0" frameborder="0" allowfullscreen ></iframe>
+	<!-- SVG embedding -->
+	<svg version="1.1">
+		baseProfile="full"
+		width="300" height="300"
+		xmlns="https://www.w3.org/2000/svg">
+		<rect width="100%" height="100%" fill="black"/>
+		<circle cx="150" cy="75" r="70" fill="blue"/>
+	</svg>
+	
+
+</body>
+</html>
