@@ -1,0 +1,15 @@
+h1 {
+	color:blue;
+	background-color:yellow;
+	border:2px solid black;
+}
+
+p {
+	color:red;
+	text-shadow: 2px 2px 2px black;
+}
+
+li {
+	color:lime;
+	text-decoration:underline;
+}
